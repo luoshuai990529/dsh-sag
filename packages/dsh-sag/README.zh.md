@@ -2,6 +2,8 @@
 
 dsh-sag 让 DeepSeek Harness 直接使用运行在本机的 SAG 个人知识库，包括检索、阅读、上传、写入和文档管理。
 
+> **维护位置**：本插件的源码、issue 和发版都在 SAG 原项目仓库中维护 —— [Zleap-AI/SAG · integrations/dsh-sag](https://github.com/Zleap-AI/SAG/tree/main/integrations/dsh-sag)。本仓库不再作为独立主线开发，提交 PR 和问题请前往 SAG 仓库；插件随 SAG 一起定版和发布。完整说明见[使用文档](https://github.com/Zleap-AI/SAG/blob/main/integrations/dsh-sag/docs/usage.zh.md)。
+
 适用于 DeepSeek Harness `0.1.1-rc.2`（当前 npm `latest`；目前没有正式的 `0.1.1` 稳定版）。SAG 需要包含“连接 dsh”设置和本地连接器 API；当前未修改的 SAG `1.8.3` 尚未包含该能力，请使用 [SAG PR #154](https://github.com/Zleap-AI/SAG/pull/154) 对应构建，或后续包含该能力的正式版本。
 
 ## 开始使用
