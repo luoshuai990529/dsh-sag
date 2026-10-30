@@ -2,6 +2,18 @@
 
 dsh-sag 是 DeepSeek Harness 的 SAG 本地个人知识库插件，让 dsh 可以检索和阅读知识、上传文件、写入笔记并管理文档。
 
+## 维护位置
+
+本插件在 SAG 原项目仓库中统一维护，源码、issue 和使用文档都以原项目为准：
+
+| 用途 | 地址 |
+| --- | --- |
+| 源码目录 | [Zleap-AI/SAG · integrations/dsh-sag](https://github.com/Zleap-AI/SAG/tree/main/integrations/dsh-sag) |
+| 使用文档 | [dsh-sag 使用文档（中文）](https://github.com/Zleap-AI/SAG/blob/main/integrations/dsh-sag/docs/usage.zh.md) |
+| 问题反馈 | [Zleap-AI/SAG issues](https://github.com/Zleap-AI/SAG/issues) |
+
+本仓库不再作为独立主线开发。插件随 SAG 一起发版，版本号和兼容性由 SAG 仓库统一维护；克隆、提交和发布请在 SAG 仓库的 `integrations/dsh-sag` 目录进行。
+
 ## 兼容版本
 
 - DeepSeek Harness：`0.1.1-rc.2`（当前 npm `latest`）
@@ -51,6 +63,8 @@ SAG 会通过能力清单告诉插件当前可用的操作；插件不会调用 
 - “把 `/Users/me/Documents/产品手册.pdf` 上传到 SAG，处理完成后总结主要内容。”
 - “把下面这段会议结论作为一篇笔记写入 SAG：……”
 
+更细的参数、命令和排错说明见 [使用文档](https://github.com/Zleap-AI/SAG/blob/main/integrations/dsh-sag/docs/usage.zh.md)。
+
 ## 更新或卸载
 
 ```sh
@@ -59,3 +73,7 @@ dsh plugin --profile web remove @zleap-ai/dsh-sag
 ```
 
 连接失败时，请确认 SAG 正在运行，然后重新执行 `setup` 和 `doctor`。普通用户不需要配置 Python 环境。
+
+## 参与开发
+
+开发相关提交（代码、打包脚本、发布说明）请提到 SAG 仓库的 `integrations/dsh-sag` 目录，并在那里提交 PR 和 issue。本仓库保留历史记录，便于对照旧版本行为。
